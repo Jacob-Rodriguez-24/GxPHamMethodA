@@ -1,0 +1,68 @@
+ namespace _Method { #include "HSLHttp\\HSLHttp.hsl" } 
+ namespace _Method { #include "HSLJson\\HSLJson.hsl" } 
+ namespace _Method { #include "HSLExtensions\\String.hsl" } 
+ namespace _Method { #include "JsonConfigHelper\\JsonConfigHelper.hs_" } 
+ namespace _Method { #include "HSLArrLib.hsl" } 
+ namespace _Method { #include "HSLObjLib.hsl" } 
+ namespace _Method { #include "HSLTrcLib.hsl" } 
+ namespace _Method { #include "HSLStrLib.hsl" } 
+ namespace _Method { #include "StringTokenizer\\StrTokenize.hs_" } 
+ namespace _Method { #include "HSLUtilLib2.hsl" } 
+ namespace _Method { #include "HSLUtilLib.hsl" } 
+#include "aliquoting_test_method.res"
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+global device ML_STAR ("aliquoting_test_method.lay", "ML_STAR", hslTrue);
+global device HxFan_B ("aliquoting_test_method.lay", "HxFan_B", hslTrue);
+global device HxFan ("aliquoting_test_method.lay", "HxFan", hslTrue);
+dialog customDialogA731C586A6C9478aB4F1276B2506DE98;
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+ namespace _Method { #include "HSLMETEDLib.hs_" } 
+ namespace _Method { #include "HSLMECCLib.hs_" } 
+ namespace _Method { #include "HSLPTLLib.hsl" } 
+ namespace _Method { #include "HSLSchedCCLib.hs_" } 
+// }} ""
+// {{{ 2 "LocalSubmethodInclude" ""
+ namespace _Method {  #include __filename__ ".sub"  } 
+// }} ""
+/* {{ 2 "ProcessInsertLine" "" */ // }} ""
+// {{{ 5 "main" "Begin"
+namespace _Method { method main(  ) void {
+// }} ""
+// {{ 5 "main" "InitLocals"
+// }} ""
+// {{ 2 "AutoInitBlock" ""
+PTL::SetWashingStateDefault("RinseTime1", 5);
+PTL::SetWashingStateDefault("SoakTime1", 5);
+PTL::SetWashingStateDefault("FlowRate1", 11);
+PTL::SetWashingStateDefault("RinseTime2", 0);
+PTL::SetWashingStateDefault("SoakTime2", 0);
+PTL::SetWashingStateDefault("FlowRate2", 11);
+PTL::SetWashingStateDefault("DrainingTime", 10);
+PTL::SetWashingStateDefault("StartWashLiquid", 0);
+PTL::SetLoadingStateDefault("RecoveryOptionContinue", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionExclude", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
+PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
+JSONCONFIGHELPER::_InitLibrary();
+STRTOKENIZE::_InitLibrary();
+::RegisterAbortHandler( "OnAbort");
+// }} ""
+// {{ 1 1 0 "0d3f39d4_9963_4e1c_bd1c265685ebcc0e" "ML_STAR:{1C0C0CB0-7C87-11D3-AD83-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._1C0C0CB0_7C87_11D3_AD83_0004ACB1DCB2("0d3f39d4_9963_4e1c_bd1c265685ebcc0e"); // Initialize
+}
+// }} ""
+// {{ 2 1 0 "a46d0486_4ebe_4652_85183afe6a8aafec" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialogA731C586A6C9478aB4F1276B2506DE98.InitCustomDialog( "a46d0486_4ebe_4652_85183afe6a8aafec" );
+customDialogA731C586A6C9478aB4F1276B2506DE98.ShowCustomDialog();
+// }} ""
+// {{ 2 "AutoExitBlock" ""
+JSONCONFIGHELPER::_ExitLibrary();
+STRTOKENIZE::_ExitLibrary();
+// }} ""
+// {{{ 5 "main" "End"
+} }
+// }} ""
+// $$author=jrodriguez2$$valid=0$$time=2024-02-26 15:37$$checksum=1a09c204$$length=090$$
