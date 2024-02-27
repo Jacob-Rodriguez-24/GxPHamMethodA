@@ -54,8 +54,8 @@ STRTOKENIZE::_InitLibrary();
 	arrRetValues = ML_STAR._1C0C0CB0_7C87_11D3_AD83_0004ACB1DCB2("0d3f39d4_9963_4e1c_bd1c265685ebcc0e"); // Initialize
 }
 // }} ""
-// {{ 2 1 0 "bb02e187_4ef9_4baa_822dbecb3fa5cb82" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialogA731C586A6C9478aB4F1276B2506DE98.InitCustomDialog( "bb02e187_4ef9_4baa_822dbecb3fa5cb82" );
+// {{ 2 1 0 "209b5c29_5d21_46b2_9bde2d1014e3a92f" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialogA731C586A6C9478aB4F1276B2506DE98.InitCustomDialog( "209b5c29_5d21_46b2_9bde2d1014e3a92f" );
 customDialogA731C586A6C9478aB4F1276B2506DE98.ShowCustomDialog();
 // }} ""
 // {{ 2 "AutoExitBlock" ""
@@ -65,4 +65,4 @@ STRTOKENIZE::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=jrodriguez2$$valid=0$$time=2024-02-27 10:14$$checksum=dc02b5fd$$length=090$$
+// $$author=jrodriguez2$$valid=0$$time=2024-02-27 10:17$$checksum=8e0a7464$$length=090$$
